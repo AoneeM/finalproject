@@ -1,0 +1,108 @@
+
+
+img {
+   width: 110%;
+   height: 110%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Comic Sans MS', cursive, sans-serif;
+   text-align: center;
+}
+ /* the text decoration */
+p {
+   font-family: 'Comic Sans MS', cursive, sans-serif;
+   font-size: 1.5rem;
+   color: #ffe6f3;
+}
+
+/* Background with cheetah print */
+
+/* Container styling */
+.container {
+   margin-top: 100px;
+   padding: 60px;
+   background-color: rgba(87, 44, 52, 0.8);
+   border-radius: 15px;
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   box-shadow: 0px 0px 20px rgba(255, 105, 180, 0.7);
+}
+
+/* Heading styles */
+h1 {
+   font-size: 3rem;
+   color: #ff69b4;
+   text-shadow: 5px 5px #000;
+}
+
+/* Intro paragraph */
+.intro {
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+/* Button styling */
+.sparkle-btn {
+   padding: 15px 30px;
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #fff;
+   background-color: #ff1493;
+   border: none;
+   border-radius: 25px;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+   cursor: pointer;
+   text-transform: uppercase;
+   text-shadow: 1px 1px #000;
+   transition: all 0.3s ease;
+}
+
+.sparkle-btn:hover {
+   background-color: #ff6ec7;
+   transform: scale(1.1);
+   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Hidden jumpscare styles */
+#jumpscare {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background-color: rgb(39, 6, 6);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+   animation: fade-out 3s forwards;
+   visibility: hidden;
+   opacity: 0;
+}
+
+#jumpscare img {
+   max-width: 80%;
+   max-height: 80%;
+}
+
+/* Animation to fade out jumpscare */
+@keyframes fade-out {
+   0% {
+       visibility: visible;
+       opacity: 1;
+   }
+   100% {
+       visibility: hidden;
+       opacity: 0;
+   }
+}
+
+.hidden2 {
+   visibility: hidden;
+   opacity: 0;
+}
